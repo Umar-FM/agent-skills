@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Concept Brief",
+  "type": "object",
+  "required": [
+    "premise",
+    "viewer",
+    "target_surface",
+    "central_question",
+    "payoff",
+    "proof",
+    "format",
+    "score",
+    "decision"
+  ],
+  "properties": {
+    "premise": {
+      "type": "string",
+      "minLength": 10
+    },
+    "viewer": {
+      "type": "string"
+    },
+    "target_surface": {
+      "enum": [
+        "home",
+        "suggested",
+        "search",
+        "subscriptions",
+        "shorts",
+        "mixed"
+      ]
+    },
+    "central_question": {
+      "type": "string"
+    },
+    "payoff": {
+      "type": "string"
+    },
+    "proof": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "format": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "decision": {
+      "enum": [
+        "PASS",
+        "RETURN",
+        "REJECT"
+      ]
+    }
+  }
+}

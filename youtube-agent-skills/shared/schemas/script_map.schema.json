@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Script Map",
+  "type": "object",
+  "required": [
+    "package",
+    "beats",
+    "payoff"
+  ],
+  "properties": {
+    "package": {
+      "type": "object"
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "start_seconds",
+          "purpose",
+          "viewer_question",
+          "visual_proof"
+        ],
+        "properties": {
+          "start_seconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "viewer_question": {
+            "type": "string"
+          },
+          "visual_proof": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "payoff": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analytics Postmortem",
+  "type": "object",
+  "required": [
+    "prediction",
+    "actuals",
+    "primary_bottleneck",
+    "confidence",
+    "decision",
+    "next_experiment"
+  ],
+  "properties": {
+    "prediction": {
+      "type": "object"
+    },
+    "actuals": {
+      "type": "object"
+    },
+    "primary_bottleneck": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "decision": {
+      "enum": [
+        "scale",
+        "revise",
+        "repackage",
+        "sequel",
+        "stop",
+        "collect_more_data"
+      ]
+    },
+    "next_experiment": {
+      "type": "string"
+    }
+  }
+}

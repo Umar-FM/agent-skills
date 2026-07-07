@@ -1,0 +1,1 @@
+experiment_id,project_id,date,hypothesis,variable,control,variant_a,variant_b,variant_c,primary_metric,guardrail_metrics,decision_rule,result,confidence,decision,notes

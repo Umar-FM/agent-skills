@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Channel Thesis",
+  "type": "object",
+  "required": [
+    "primary_viewer",
+    "repeated_promise",
+    "content_pillars",
+    "monetization_ladder",
+    "production_constraints",
+    "anti_goals"
+  ],
+  "properties": {
+    "primary_viewer": {
+      "type": "string",
+      "minLength": 20
+    },
+    "repeated_promise": {
+      "type": "string",
+      "minLength": 20
+    },
+    "emotional_engine": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content_pillars": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "viewer_value"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "viewer_value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "monetization_ladder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "production_constraints": {
+      "type": "object"
+    },
+    "anti_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

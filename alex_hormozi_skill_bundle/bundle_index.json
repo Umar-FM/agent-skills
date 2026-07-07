@@ -1,0 +1,26 @@
+{
+  "name": "ultimate-alex-hormozi-skill-bundle",
+  "version": "1.0.0",
+  "created": "2026-06-11",
+  "description": "A modular skill bundle for offer creation, lead generation, money models, scaling roadmaps, conversion assets, drills, and templates inspired by Alex Hormozi's public books and Acquisition.com course/playbook maps.",
+  "modules": [
+    "SKILL.md",
+    "01_source_map_and_architecture.md",
+    "02_offer_architect_skill.md",
+    "03_lead_generation_machine_skill.md",
+    "04_money_models_skill.md",
+    "05_scaling_roadmap_skill.md",
+    "06_conversion_assets_skill.md",
+    "07_drills_sprints_and_curriculum.md",
+    "08_templates_checklists_and_rubrics.md"
+  ],
+  "templates": [
+    "templates/offer_canvas.md",
+    "templates/lead_generation_plan.md",
+    "templates/money_model_canvas.md",
+    "templates/scaling_diagnosis.md",
+    "templates/30_day_sprint_planner.md"
+  ],
+  "non_affiliation": "Not affiliated with Alex Hormozi, Leila Hormozi, Acquisition.com, Gym Launch, or related companies.",
+  "copyright_note": "Educational synthesis only; does not reproduce copyrighted book/course text."
+}

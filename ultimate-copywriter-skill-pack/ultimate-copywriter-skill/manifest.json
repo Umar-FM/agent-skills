@@ -1,0 +1,19 @@
+{
+  "name": "ultimate-copywriter-marketer",
+  "version": "1.0.0",
+  "description": "A comprehensive agent skill for research-led copywriting, marketing strategy, positioning, offer design, brand voice, conversion copy, content marketing, full-funnel campaigns, and QA.",
+  "primary_file": "SKILL.md",
+  "supporting_files": [
+    "01_research_and_strategy.md",
+    "02_offer_and_positioning.md",
+    "03_copywriting_playbook.md",
+    "04_asset_recipes_and_examples.md",
+    "05_brand_voice_and_content.md",
+    "06_conversion_qa_rubrics.md",
+    "07_author_synthesis_matrix.md",
+    "08_industry_playbooks.md",
+    "09_agent_prompt_templates.md",
+    "10_full_funnel_campaign_blueprints.md"
+  ],
+  "license_note": "Original synthesis. Do not use this skill to imitate a living author exactly or reproduce copyrighted works verbatim."
+}

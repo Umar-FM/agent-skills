@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Packaging Brief",
+  "type": "object",
+  "required": [
+    "target_surface",
+    "core_promise",
+    "hypotheses",
+    "opening_obligations"
+  ],
+  "properties": {
+    "target_surface": {
+      "type": "string"
+    },
+    "core_promise": {
+      "type": "string"
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "thumbnail_concept",
+          "proof_in_video"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "thumbnail_concept": {
+            "type": "string"
+          },
+          "proof_in_video": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "opening_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
