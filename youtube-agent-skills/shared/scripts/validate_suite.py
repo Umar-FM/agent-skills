@@ -9,13 +9,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 errors: list[str] = []
 
-skills = sorted((ROOT / 'skills').glob('*/SKILL.md'))
+skills = []
+for skill_dir in sorted((ROOT / 'skills').iterdir()):
+    if not skill_dir.is_dir():
+        continue
+    candidates = [skill_dir / 'SKILL.md', skill_dir / f'{skill_dir.name}.md']
+    path = next((candidate for candidate in candidates if candidate.exists()), None)
+    if path is not None:
+        skills.append(path)
 if not skills:
     errors.append('No skills found')
 
 names: set[str] = set()
 for path in skills:
-    text = path.read_text(encoding='utf-8')
+    text = path.read_text(encoding='utf-8-sig')
     match = re.match(r'^---\n(.*?)\n---\n', text, re.S)
     if not match:
         errors.append(f'{path}: missing YAML-style front matter')
@@ -38,13 +45,13 @@ for path in skills:
 
 for schema in (ROOT / 'shared' / 'schemas').glob('*.json'):
     try:
-        json.loads(schema.read_text(encoding='utf-8'))
+        json.loads(schema.read_text(encoding='utf-8-sig'))
     except Exception as exc:
         errors.append(f'{schema}: invalid JSON: {exc}')
 
 index_path = ROOT / 'skill-index.json'
 try:
-    index = json.loads(index_path.read_text(encoding='utf-8'))
+    index = json.loads(index_path.read_text(encoding='utf-8-sig'))
     index_names = {x['name'] for x in index['skills']}
     if index_names != names:
         errors.append(f'skill-index mismatch: missing={names-index_names}, extra={index_names-names}')
@@ -52,8 +59,8 @@ except Exception as exc:
     errors.append(f'skill-index invalid: {exc}')
 
 manifest = ROOT / 'manifest.txt'
-listed = set(manifest.read_text(encoding='utf-8').splitlines()) if manifest.exists() else set()
-actual = {str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and p.name != 'manifest.txt'}
+listed = set(manifest.read_text(encoding='utf-8-sig').splitlines()) if manifest.exists() else set()
+actual = {str(p.relative_to(ROOT)).replace('\\', '/') for p in ROOT.rglob('*') if p.is_file() and p.name != 'manifest.txt'}
 if listed != actual:
     errors.append(f'manifest mismatch: missing={sorted(actual-listed)[:5]}, extra={sorted(listed-actual)[:5]}')
 

@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Sleep channel playbook](../../shared/SLEEP_CHANNEL_PLAYBOOK.md) when producing sleep or low-arousal background-listening videos.
 
 ## Use this skill when
 
@@ -22,6 +23,7 @@ Read these shared references before acting:
 - A channel is overly dependent on generic stock clips.
 - Custom graphics, maps, data, screens, demonstrations, or archival material are required.
 - The visual system must become faster without becoming templated.
+- A sleep video needs slow visual novelty without brightness spikes or startling cuts.
 
 ## Required inputs
 
@@ -38,6 +40,7 @@ Read these shared references before acting:
 - Maintain an asset-rights ledger from acquisition through final export.
 - Synthetic visuals must not masquerade as documentary evidence.
 - Reusable systems are encouraged; materially identical videos are not.
+- For sleep content, vary visuals gently every 20-60 seconds rather than using energetic contrast resets.
 
 # Workflow
 

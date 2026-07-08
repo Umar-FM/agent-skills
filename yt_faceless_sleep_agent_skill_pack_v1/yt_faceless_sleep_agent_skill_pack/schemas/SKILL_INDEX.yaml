@@ -1,0 +1,136 @@
+version: '1.0'
+created: '2026-07-07'
+skills:
+- id: yt_outlier_scout
+  title: YT Outlier Scout
+  file: skills/01_yt_outlier_scout.md
+  category: market_intelligence
+- id: competitor_format_miner
+  title: Competitor Format Miner
+  file: skills/02_competitor_format_miner.md
+  category: market_intelligence
+- id: comment_pain_miner
+  title: Comment Pain Miner
+  file: skills/03_comment_pain_miner.md
+  category: market_intelligence
+- id: format_engine_selector
+  title: Format Engine Selector
+  file: skills/04_format_engine_selector.md
+  category: strategy
+- id: storytelling_format_selector
+  title: Storytelling Format Selector
+  file: skills/05_storytelling_format_selector.md
+  category: strategy
+- id: packaging_scientist
+  title: Packaging Scientist
+  file: skills/06_packaging_scientist.md
+  category: copy_packaging
+- id: hook_writer
+  title: Hook Writer
+  file: skills/07_hook_writer.md
+  category: copy_scriptwriting
+- id: ai_pattern_recognition_prompt_chain
+  title: AI Pattern Recognition Prompt Chain
+  file: skills/08_ai_pattern_recognition_prompt_chain.md
+  category: research_packaging
+- id: research_conveyor_belt
+  title: Research Conveyor Belt
+  file: skills/09_research_conveyor_belt.md
+  category: research
+- id: topic_research_prompt_builder
+  title: Topic Research Prompt Builder
+  file: skills/10_topic_research_prompt_builder.md
+  category: research
+- id: standard_faceless_scriptwriter
+  title: Standard Faceless Scriptwriter
+  file: skills/11_standard_faceless_scriptwriter.md
+  category: copy_scriptwriting
+- id: sleep_scriptwriter
+  title: Sleep Scriptwriter
+  file: skills/12_sleep_scriptwriter.md
+  category: copy_scriptwriting_sleep
+- id: docuseries_builder
+  title: Docuseries Builder
+  file: skills/13_docuseries_builder.md
+  category: longform_strategy
+- id: explainer_builder
+  title: Explainer Builder
+  file: skills/14_explainer_builder.md
+  category: copy_scriptwriting
+- id: longform_ai_trainer
+  title: Longform AI Trainer
+  file: skills/15_longform_ai_trainer.md
+  category: copy_systems
+- id: visual_production_segmenter
+  title: Visual Production Segmenter
+  file: skills/16_visual_production_segmenter.md
+  category: production
+- id: visual_contrast_editor
+  title: Visual Contrast Editor
+  file: skills/17_visual_contrast_editor.md
+  category: production
+- id: voice_audio_director
+  title: Voice and Audio Director
+  file: skills/18_voice_audio_director.md
+  category: production_audio
+- id: sleep_channel_architect
+  title: Sleep Channel Architect
+  file: skills/19_sleep_channel_architect.md
+  category: channel_strategy_sleep
+- id: policy_originality_guard
+  title: Policy Originality Guard
+  file: skills/20_policy_originality_guard.md
+  category: risk_policy
+- id: upload_metadata_agent
+  title: Upload Metadata Agent
+  file: skills/21_upload_metadata_agent.md
+  category: publishing
+- id: analytics_diagnosis_agent
+  title: Analytics Diagnosis Agent
+  file: skills/22_analytics_diagnosis_agent.md
+  category: growth_analytics
+- id: monetization_expansion_agent
+  title: Monetization Expansion Agent
+  file: skills/23_monetization_expansion_agent.md
+  category: business
+- id: production_pm_va_operator
+  title: Production PM / VA Operator
+  file: skills/24_production_pm_va_operator.md
+  category: operations
+recommended_order:
+- yt_outlier_scout
+- competitor_format_miner
+- comment_pain_miner
+- format_engine_selector
+- storytelling_format_selector
+- packaging_scientist
+- hook_writer
+- ai_pattern_recognition_prompt_chain
+- research_conveyor_belt
+- topic_research_prompt_builder
+- standard_faceless_scriptwriter
+- sleep_scriptwriter
+- docuseries_builder
+- explainer_builder
+- longform_ai_trainer
+- visual_production_segmenter
+- visual_contrast_editor
+- voice_audio_director
+- sleep_channel_architect
+- policy_originality_guard
+- upload_metadata_agent
+- analytics_diagnosis_agent
+- monetization_expansion_agent
+- production_pm_va_operator
+core_pipeline:
+- yt_outlier_scout
+- competitor_format_miner
+- format_engine_selector
+- sleep_channel_architect
+- research_conveyor_belt
+- sleep_scriptwriter
+- policy_originality_guard
+- visual_production_segmenter
+- voice_audio_director
+- upload_metadata_agent
+- analytics_diagnosis_agent

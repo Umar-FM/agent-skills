@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Pattern mining playbook](../../shared/PATTERN_MINING_PLAYBOOK.md)
 
 ## Use this skill when
 
@@ -35,6 +36,7 @@ Read these shared references before acting:
 
 - Use current web and platform data; record observation dates.
 - Normalize performance by channel size, upload age, format, and typical baseline where possible.
+- Prioritize recent low-subscriber or young-channel outliers when searching for early demand signals.
 - Study underperformers as well as winners to avoid survivorship bias.
 - Transfer structures and viewer tensions, not copyrighted assets or another creator’s identity.
 - A trend is not strategy unless it connects to the channel promise.
@@ -43,14 +45,14 @@ Read these shared references before acting:
 
 1. Create four channel sets: direct peers, audience substitutes, world-class packaging references, and unrelated niches with transferable formats.
 2. Collect recent uploads, titles, thumbnails, view velocity, length, topic, format, and apparent target surface.
-3. Identify true outliers relative to each channel’s baseline rather than raw view count.
-4. Decompose each outlier into idea, familiarity, unexpected twist, package, access/proof, retention engine, emotional engine, and timing.
+3. Identify true outliers relative to each channel's baseline rather than raw view count. Record recent high-view/low-subscriber anomalies separately.
+4. Decompose each outlier into idea, familiarity, unexpected twist, title formula, thumbnail formula, first-30-second promise, access/proof, retention engine, emotional engine, and timing.
 5. Compare with non-outliers to identify the differentiating variable rather than assuming every visible feature caused success.
 6. Track repeated packaging patterns and estimate saturation: emerging, accelerating, mature, copied, or declining.
 7. Search cross-niche formats that the target audience has likely not seen, such as tier comparisons, timed tests, reversals, simulations, or investigations.
 8. Estimate trend half-life and production lead time. Reject ideas that will arrive after the audience moves on unless the topic has evergreen value.
 9. Assess rights, advertiser, reputational, and misinformation risks.
-10. Produce opportunity briefs with transferable principle, adaptation idea, evidence, confidence, and kill criteria.
+10. Produce opportunity briefs with transferable principle, adaptation idea, original value-add, evidence, confidence, and kill criteria.
 
 ## Decision rules
 
@@ -65,6 +67,7 @@ Read these shared references before acting:
 - Weekly or monthly competitive scan.
 - Outlier database with normalized context.
 - Format-transfer library.
+- Comment-gap and first-30-second pattern notes where available.
 - Trend opportunity briefs and saturation map.
 - Competitor package and positioning gaps.
 

@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Pattern mining playbook](../../shared/PATTERN_MINING_PLAYBOOK.md)
 
 ## Use this skill when
 
@@ -38,6 +39,7 @@ Read these shared references before acting:
 - Create meaningfully different hypotheses, not cosmetic variants.
 - A package may simplify but may not imply a result the video cannot prove.
 - The first 30 seconds inherits explicit obligations from the selected package.
+- Pattern-derived packages must pass clone-risk review before use.
 
 # Workflow
 
@@ -48,7 +50,7 @@ Read these shared references before acting:
 5. For each hypothesis, pair title and thumbnail, identify the inferred promise, and point to the exact proof/payoff in the video.
 6. Run a one-second test: show the package briefly to an uninformed reviewer and ask what they think the video is about and why it matters.
 7. Run a mobile test for focal clarity, legibility, and visual hierarchy.
-8. Red-team for clickbait, ambiguity, unintended interpretation, brand damage, policy issues, and competitor similarity.
+8. Red-team for clickbait, ambiguity, unintended interpretation, brand damage, policy issues, and competitor similarity. Rewrite anything too close in wording, structure, claim, or visual idea.
 9. Define the first 5-, 15-, and 30-second obligations created by the preferred package. Reopen the concept if the script cannot fulfill them.
 10. Prepare a native A/B plan where eligible. Use distinct hypotheses and allow YouTube’s watch-time-based result to decide when statistically conclusive.
 

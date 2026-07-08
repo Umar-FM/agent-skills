@@ -1,0 +1,26 @@
+video_brief:
+  working_title:
+  thumbnail_concept:
+  viewer_behavior:
+  emotional_packaging:
+  content_engine:
+  story_format:
+  mode: standard | sleep
+  target_length_minutes:
+  audience:
+  voice_card:
+    tone:
+    pacing:
+    forbidden_words: []
+    sentence_rules:
+  research_angle:
+  do_not_claim: []
+  soft_or_standard_hook:
+  chapter_plan:
+    - chapter:
+      gentle_question_or_open_loop:
+      payoff:
+  visual_style:
+  audio_style:
+  cta_goal:
+  policy_notes:

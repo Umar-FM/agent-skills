@@ -9,10 +9,10 @@ The suite does **not** optimize CTR or AVD in isolation. Its working north star 
 
 ## What is included
 
-- 22 specialist agent skills, each in its own folder with a `SKILL.md`.
+- 25 agent skills, each in its own folder.
 - A general-manager/orchestrator skill that routes work and enforces stage gates.
 - Canonical handoff contracts so agents produce compatible outputs.
-- Shared doctrine, metrics, diagnostic trees, policy guardrails, and format playbooks.
+- Shared doctrine, metrics, diagnostic trees, policy guardrails, format playbooks, sleep-channel guidance, and pattern-mining guidance.
 - Reusable Markdown, CSV, and JSON templates.
 - Machine-readable schemas and a skill routing index.
 - Standard-library Python tools for validation and metric calculations.
@@ -32,6 +32,8 @@ Start with these core roles:
 6. `retention-video-editor`
 7. `analytics-experimentation-scientist`
 8. `rights-policy-brand-safety`
+9. `ai-pattern-mining-analyst` when deriving patterns from examples
+10. `sleep-channel-architect` and `sleep-scriptwriter` for sleep or background-listening channels
 
 Add the remaining specialists as production volume and monetization complexity increase.
 
@@ -72,7 +74,7 @@ projects/<video-id>/
   09-revenue/
 ```
 
-Use the templates in `shared/templates/` and the artifact definitions in `shared/HANDOFF_CONTRACTS.md`.
+Use the templates in `shared/templates/`, the artifact definitions in `shared/HANDOFF_CONTRACTS.md`, and the sleep/pattern playbooks when those modes apply.
 
 ## Current-policy warning
 

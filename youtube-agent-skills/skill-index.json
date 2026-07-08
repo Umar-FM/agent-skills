@@ -1,535 +1,603 @@
 {
-  "suite_name": "youtube-agent-skills",
-  "version": "1.0.0",
-  "checked_policy_date": "2026-06-23",
-  "north_star": "qualified watch time per impression, constrained by satisfaction, originality, profitability, and policy",
-  "skills": [
-    {
-      "name": "youtube-business-orchestrator",
-      "description": "Orchestrates a faceless YouTube business from channel thesis through postmortem, routing work across specialist agents and enforcing CTR, AVD, originality, profitability, and policy gates.",
-      "triggers": [
-        "Starting or restructuring a channel.",
-        "Selecting which concepts enter production.",
-        "Coordinating several specialist agents.",
-        "Resolving disagreements about audience, package, scope, risk, or revenue.",
-        "Running weekly greenlight, production, and postmortem reviews."
-      ],
-      "inputs": [
-        "Locked channel thesis or an explicit request to create one.",
-        "Idea backlog and active-project state table.",
-        "Production capacity, cash constraints, and release obligations.",
-        "Latest channel analytics, experiment log, and revenue dashboard.",
-        "Open policy, rights, sponsor, or reputational risks."
-      ],
-      "outputs": [
-        "Weekly portfolio priority list.",
-        "Project state board with owner, hypothesis, risk, next artifact, and gate status.",
-        "Greenlight and return-with-revisions decision log.",
-        "Capacity allocation and escalation record.",
-        "Monthly operating review covering creative, audience, revenue, cost, and policy."
-      ]
-    },
-    {
-      "name": "channel-strategy-architect",
-      "description": "Defines the channel audience, repeatable promise, content pillars, format portfolio, faceless identity, competitive moat, and monetization thesis.",
-      "triggers": [
-        "Launching a new channel or major channel pivot.",
-        "The audience is unclear or returning viewers are weak.",
-        "Video ideas perform individually but do not form a coherent library.",
-        "A new niche, language, market, or revenue model is being considered."
-      ],
-      "inputs": [
-        "Founder capabilities, interests, credibility, constraints, and anti-goals.",
-        "Audience evidence and competitive analysis.",
-        "Production budget, available tools, and desired publishing capacity.",
-        "Revenue goals and acceptable time horizon.",
-        "Policy and rights boundaries."
-      ],
-      "outputs": [
-        "Completed `shared/templates/channel_thesis.md`.",
-        "Content-pillar matrix and format portfolio.",
-        "Browse/search acquisition map.",
-        "Faceless brand and editorial standards.",
-        "Monetization ladder and first ten-video test."
-      ]
-    },
-    {
-      "name": "audience-market-researcher",
-      "description": "Builds evidence-backed audience profiles, viewing jobs, language maps, content gaps, and commercial-intent insights for YouTube strategy and ideation.",
-      "triggers": [
-        "Creating or revising the channel thesis.",
-        "Developing a new content pillar, series, offer, or sponsor category.",
-        "Investigating weak audience fit, comments, or returning-viewer performance.",
-        "Searching for durable idea territories rather than one-off trends."
-      ],
-      "inputs": [
-        "Research question and decision it will inform.",
-        "Candidate audience, niche, geography, and language.",
-        "Existing channel analytics, comments, surveys, emails, or community data.",
-        "Competitor and adjacent-channel list.",
-        "Privacy, legal, and data-access constraints."
-      ],
-      "outputs": [
-        "Completed `shared/templates/audience_profile.md`.",
-        "Evidence table with source, confidence, and implication.",
-        "Audience language and objection bank.",
-        "Content-gap map and opportunity territories.",
-        "Commercial-intent and sponsor/product-fit notes."
-      ]
-    },
-    {
-      "name": "trend-competitive-intelligence",
-      "description": "Finds current YouTube outliers, format shifts, cross-niche opportunities, competitive gaps, and trend half-lives without encouraging imitation or rights violations.",
-      "triggers": [
-        "Building the idea backlog or quarterly strategy.",
-        "A format is declining or competitors are copying it.",
-        "The channel needs adjacent growth opportunities.",
-        "A breaking trend may create a time-sensitive video."
-      ],
-      "inputs": [
-        "Channel thesis and content pillars.",
-        "Peer, aspirational, substitute, and cross-niche channel sets.",
-        "Time window and target region/language.",
-        "Available analytics tools and public data.",
-        "Production and policy constraints."
-      ],
-      "outputs": [
-        "Weekly or monthly competitive scan.",
-        "Outlier database with normalized context.",
-        "Format-transfer library.",
-        "Trend opportunity briefs and saturation map.",
-        "Competitor package and positioning gaps."
-      ]
-    },
-    {
-      "name": "idea-format-developer",
-      "description": "Generates, scores, pressure-tests, and greenlights high-potential video concepts and repeatable formats for faceless entertainment-education channels.",
-      "triggers": [
-        "Creating a backlog or selecting the next upload.",
-        "Developing a repeatable series or adapting an outlier format.",
-        "A channel has strong production but inconsistent views.",
-        "A script or package feels forced because the underlying idea is weak."
-      ],
-      "inputs": [
-        "Locked channel thesis.",
-        "Audience evidence and current competitive/trend intelligence.",
-        "Previous postmortems and format performance.",
-        "Production capacity, budget, rights, and revenue constraints.",
-        "Any unique access, data, expertise, or assets."
-      ],
-      "outputs": [
-        "Scored idea backlog.",
-        "Completed concept brief for each greenlight candidate.",
-        "Format definition with repeatability and variation rules.",
-        "Title/thumbnail seeds and retention runway.",
-        "Risk, proof, cost, and monetization notes."
-      ]
-    },
-    {
-      "name": "packaging-director",
-      "description": "Integrates titles and thumbnails into distinct packaging hypotheses that win qualified clicks and create explicit obligations for the opening and payoff.",
-      "triggers": [
-        "A concept is greenlit.",
-        "CTR or impressions underperform while viewing quality is strong.",
-        "An evergreen video may benefit from repackaging.",
-        "A native YouTube A/B test is planned."
-      ],
-      "inputs": [
-        "Concept brief, target viewer, target surface, and channel thesis.",
-        "Proof, access, and final payoff available in the video.",
-        "Competitive package audit and current channel baselines.",
-        "Thumbnail assets or capture plan.",
-        "Previous A/B and postmortem learnings."
-      ],
-      "outputs": [
-        "Completed `shared/templates/packaging_brief.md`.",
-        "Three title-thumbnail hypotheses with proof mapping.",
-        "Primary route and fallback route.",
-        "Thumbnail capture/design brief and title bank assignments.",
-        "Opening obligations and A/B test plan."
-      ]
-    },
-    {
-      "name": "thumbnail-art-director",
-      "description": "Designs and briefs mobile-first thumbnails with one dominant idea, strong visual proof, clean hierarchy, originality, and testable alternatives for faceless channels.",
-      "triggers": [
-        "A packaging brief requires thumbnail concepts or asset capture.",
-        "An existing thumbnail needs a new hypothesis.",
-        "A channel needs a recognizable but flexible visual system.",
-        "Thumbnail production is becoming slow, cluttered, or derivative."
-      ],
-      "inputs": [
-        "Locked packaging brief and inferred viewer promise.",
-        "Available or creatable visual proof.",
-        "Channel visual system and competitor audit.",
-        "Rights-cleared source assets or capture plan.",
-        "Mobile display constraints and test plan."
-      ],
-      "outputs": [
-        "Thumbnail creative brief and visual sentence.",
-        "Rough composition board and selected variants.",
-        "Asset capture/generation list with rights basis.",
-        "Production files, exports, and accessibility description.",
-        "Thumbnail-specific A/B hypothesis notes."
-      ]
-    },
-    {
-      "name": "title-copywriter",
-      "description": "Writes concise, accurate, high-curiosity YouTube titles for browse and search, paired deliberately with thumbnail information and audience intent.",
-      "triggers": [
-        "A packaging director needs title routes.",
-        "A search-led or browse-led video is being prepared.",
-        "An evergreen video needs repackaging.",
-        "Titles are verbose, generic, repetitive, or disconnected from the actual payoff."
-      ],
-      "inputs": [
-        "Concept and packaging briefs.",
-        "Target viewer and traffic surface.",
-        "Thumbnail concepts and information they already communicate.",
-        "Audience language bank, search intent, and competitor audit.",
-        "Exact result, stakes, and proof available in the video."
-      ],
-      "outputs": [
-        "Title bank grouped by hypothesis and surface.",
-        "Three finalists paired with thumbnails.",
-        "Accuracy and truncation check.",
-        "Opening obligations created by each title.",
-        "Change log for post-publish tests."
-      ]
-    },
-    {
-      "name": "research-fact-checker",
-      "description": "Builds source-backed research packets, claim ledgers, counterevidence, uncertainty labels, visual proof plans, and final factual signoff for YouTube videos.",
-      "triggers": [
-        "A concept contains factual, historical, scientific, financial, legal, medical, political, reputational, or current claims.",
-        "The script uses third-party footage, data, screenshots, quotes, or documents.",
-        "A sponsor claim or product comparison requires substantiation.",
-        "A video is being updated or corrected."
-      ],
-      "inputs": [
-        "Concept and packaging briefs.",
-        "Research questions and intended conclusion.",
-        "Target audience sophistication and runtime.",
-        "Risk category, geography, and publication date.",
-        "Available source subscriptions, archives, interviews, and datasets."
-      ],
-      "outputs": [
-        "Completed `shared/templates/research_packet.md`.",
-        "Claim ledger and source archive.",
-        "Counterevidence and uncertainty memo.",
-        "Visual proof and rights notes.",
-        "Script and final-cut factual signoff or blocking corrections."
-      ]
-    },
-    {
-      "name": "story-retention-scriptwriter",
-      "description": "Writes package-first, evidence-backed YouTube scripts with strong first-30-second confirmation, causal progression, curiosity loops, proof, emotional variation, and proportionate payoff.",
-      "triggers": [
-        "Packaging and research are ready for scripting.",
-        "Intro retention or mid-video AVD is weak.",
-        "An essay, article, or research packet must become video-native.",
-        "A faceless format needs recurring story architecture."
-      ],
-      "inputs": [
-        "Locked packaging brief and opening obligations.",
-        "Research packet and visual proof opportunities.",
-        "Target viewer, surface, runtime, and brand voice.",
-        "Sponsor/CTA requirements and policy constraints.",
-        "Retention postmortems from comparable videos."
-      ],
-      "outputs": [
-        "Locked script using `shared/templates/script.md`.",
-        "Retention map with beat timing and loop closures.",
-        "Visual and proof annotations.",
-        "Opening and payoff acceptance checklist.",
-        "Optional-cut map and sponsor integration location."
-      ]
-    },
-    {
-      "name": "faceless-visual-producer",
-      "description": "Plans and produces original, rights-cleared visuals, diagrams, screen captures, motion systems, archival transformations, and proof assets for faceless YouTube videos.",
-      "triggers": [
-        "A locked script needs a storyboard or asset plan.",
-        "A channel is overly dependent on generic stock clips.",
-        "Custom graphics, maps, data, screens, demonstrations, or archival material are required.",
-        "The visual system must become faster without becoming templated."
-      ],
-      "inputs": [
-        "Script, retention map, and visual proof list.",
-        "Channel visual grammar and brand standards.",
-        "Asset budget, tools, team capability, and deadline.",
-        "Rights and disclosure requirements.",
-        "Thumbnail capture requests."
-      ],
-      "outputs": [
-        "Storyboard/animatic and scene plan.",
-        "Completed `shared/templates/asset_manifest.csv`.",
-        "Original and licensed asset package with editable sources.",
-        "Visual-system components and reuse notes.",
-        "Thumbnail capture assets and disclosure notes."
-      ]
-    },
-    {
-      "name": "voice-sound-producer",
-      "description": "Produces clear, distinctive narration, music, sound design, pronunciation, pacing, and final audio mixes for faceless YouTube videos while respecting voice rights and disclosure rules.",
-      "triggers": [
-        "A script is locked for narration.",
-        "The channel uses human or synthetic voiceover.",
-        "Retention suffers from monotone delivery, poor intelligibility, or exhausting sound design.",
-        "Music or voice licensing and disclosure must be managed."
-      ],
-      "inputs": [
-        "Locked script with emotional and pronunciation notes.",
-        "Brand voice profile and target viewer.",
-        "Reference mix, music/SFX licenses, and platform delivery specifications.",
-        "AI disclosure and voice-consent requirements.",
-        "Picture timing or animatic where available."
-      ],
-      "outputs": [
-        "Voice brief and annotated script.",
-        "Final narration takes and alternates.",
-        "Music/SFX cue sheet with licenses.",
-        "Dialogue, music, effects stems and final mix.",
-        "Pronunciation, voice-rights, and AI-use log."
-      ]
-    },
-    {
-      "name": "retention-video-editor",
-      "description": "Edits faceless YouTube videos for promise match, clarity, causal story, proof, emotional pacing, and qualified AVD rather than indiscriminate speed or visual noise.",
-      "triggers": [
-        "Assets and narration are ready for rough cut.",
-        "A rough cut feels slow, confusing, repetitive, or overstimulating.",
-        "Past videos show intro drops, mid-video dips, or sponsor-related abandonment.",
-        "A final retention and publish-readiness review is required."
-      ],
-      "inputs": [
-        "Locked package, script, retention map, storyboard, assets, narration, and sponsor requirements.",
-        "Research packet and rights manifest.",
-        "Target runtime and previous retention postmortems.",
-        "Brand editing grammar and delivery specifications."
-      ],
-      "outputs": [
-        "Story rough cut and review notes.",
-        "Completed `shared/templates/edit_review.md`.",
-        "Final master, clean master, captions, stems, and project archive.",
-        "Predicted retention risks and optional recut plan.",
-        "Final asset usage report."
-      ]
-    },
-    {
-      "name": "publishing-seo-distribution",
-      "description": "Builds complete upload packets, metadata, chapters, captions, playlists, end screens, native A/B tests, and coordinated distribution for long-form YouTube videos.",
-      "triggers": [
-        "A final cut and package are approved.",
-        "A search-led evergreen video needs intent alignment.",
-        "A video requires chapters, playlists, end screens, disclosures, or external launch assets.",
-        "An older library needs metadata or packaging maintenance."
-      ],
-      "inputs": [
-        "Final master and approved title/thumbnail variants.",
-        "Upload packet template, captions, chapters, source/credit requirements, and disclosures.",
-        "Target surface, search intent, playlist/series map, and next-video destination.",
-        "Monetization and sponsor settings.",
-        "Launch timing and distribution channels."
-      ],
-      "outputs": [
-        "Completed `shared/templates/upload_packet.md`.",
-        "Published video record and variant configuration.",
-        "Description, chapters, captions, playlist, cards, end screen, pinned comment, and distribution copy.",
-        "Launch QA checklist and issue log.",
-        "Metadata/change history."
-      ]
-    },
-    {
-      "name": "shorts-repurposing-strategist",
-      "description": "Creates original YouTube Shorts and long-form derivative assets with swipe-stopping first frames, compressed story, loops, standalone value, and deliberate bridges to the channel.",
-      "triggers": [
-        "A long-form project contains short, standalone moments.",
-        "The channel needs top-of-funnel experiments or faster idea testing.",
-        "A Shorts-native format or series is being developed.",
-        "Viewed-versus-swiped, completion, or repeat performance is weak."
-      ],
-      "inputs": [
-        "Long-form script/cut or Shorts-native concept.",
-        "Target viewer, first-frame visual, and central payoff.",
-        "Rights and music constraints.",
-        "Channel bridge objective and related long-form destination.",
-        "Past Shorts analytics."
-      ],
-      "outputs": [
-        "Shorts brief with first-frame and payoff.",
-        "Vertical script/cut list and visual reframe plan.",
-        "Rights/music check and caption file.",
-        "Related-video bridge plan.",
-        "Shorts postmortem and long-form transfer hypothesis."
-      ]
-    },
-    {
-      "name": "analytics-experimentation-scientist",
-      "description": "Designs YouTube experiments, interprets CTR and retention by context, diagnoses bottlenecks, separates causality from correlation, and converts every upload into a decision.",
-      "triggers": [
-        "Before publication, to define predictions and tests.",
-        "After publication, to review packaging, retention, audience fit, and revenue.",
-        "When performance is ambiguous or team narratives conflict.",
-        "When deciding whether to scale, revise, repackage, sequel, or stop a format."
-      ],
-      "inputs": [
-        "Pre-publish hypothesis, predicted band, package variants, and target surface.",
-        "YouTube Analytics data by video, source, audience, geography, and time.",
-        "Retention curves, A/B results, comments, distribution changes, and revenue/cost data.",
-        "Comparable channel baselines and similar-length videos.",
-        "Experiment/change log."
-      ],
-      "outputs": [
-        "Pre-registered experiment record in `experiment_log.csv`.",
-        "Contextual performance dashboard.",
-        "Completed `shared/templates/postmortem.md`.",
-        "Primary diagnosis with confidence and alternative explanations.",
-        "Next experiment, scale/revise/repackage/sequel/stop recommendation."
-      ]
-    },
-    {
-      "name": "monetization-revenue-architect",
-      "description": "Designs an audience-aligned revenue stack across ads, Premium, sponsors, affiliates, products, memberships, licensing, and commerce while protecting retention and trust.",
-      "triggers": [
-        "Creating the channel business model.",
-        "Approaching or entering YPP.",
-        "Adding sponsors, affiliates, products, memberships, or licensing.",
-        "RPM is weak, revenue is concentrated, or monetization harms retention."
-      ],
-      "inputs": [
-        "Channel thesis, audience intent, geography, and advertiser suitability.",
-        "Current eligibility, revenue analytics, and traffic mix.",
-        "Product/sponsor categories, affiliate programs, and owned capabilities.",
-        "Production cost and cash requirements.",
-        "Trust, legal, and disclosure constraints."
-      ],
-      "outputs": [
-        "Monetization ladder by channel stage.",
-        "Revenue architecture by pillar and viewer intent.",
-        "Placement and attribution rules.",
-        "Scenario model and concentration dashboard.",
-        "Quarterly monetization experiment roadmap."
-      ]
-    },
-    {
-      "name": "sponsorship-affiliate-sales",
-      "description": "Sources, qualifies, prices, negotiates, integrates, discloses, and measures sponsorships and affiliate offers that fit the audience and preserve editorial trust.",
-      "triggers": [
-        "The channel has a defined audience and repeatable viewership.",
-        "A sponsor, agency, affiliate program, or brand approaches.",
-        "A campaign needs pricing, negotiation, integration, tracking, or reporting.",
-        "Commercial segments show retention damage or weak conversion."
-      ],
-      "inputs": [
-        "Audience/channel media kit and recent performance distribution.",
-        "Target brand categories and audience problem map.",
-        "Video slate and integration opportunities.",
-        "Rate floor, inventory, exclusivity limits, usage-rights policy, and legal terms.",
-        "Disclosure and advertiser-suitability requirements."
-      ],
-      "outputs": [
-        "Prospect pipeline and outreach assets.",
-        "Completed `shared/templates/sponsor_brief.md`.",
-        "Deal memo and approval log.",
-        "Integration script, disclosure, and tracking plan.",
-        "Campaign report and renewal recommendation."
-      ]
-    },
-    {
-      "name": "community-audience-development",
-      "description": "Develops returning viewers and audience intelligence through comments, posts, series rituals, feedback loops, community programming, and next-video relationships.",
-      "triggers": [
-        "Returning viewers or next-video movement are weak.",
-        "The channel needs audience feedback, community posts, or recurring rituals.",
-        "A series, membership, live element, or newsletter is being considered.",
-        "Comments reveal confusion, demand, or trust issues."
-      ],
-      "inputs": [
-        "Channel thesis and brand voice.",
-        "Recent uploads, comments, audience analytics, community tools, and moderation policies.",
-        "Upcoming slate and next-video bridges.",
-        "Monetization/community plans.",
-        "Safety and privacy constraints."
-      ],
-      "outputs": [
-        "Community voice and moderation guide.",
-        "Weekly comment insight report.",
-        "Community-post and ritual calendar.",
-        "Next-video bridge plan.",
-        "Audience questions, language, and correction log."
-      ]
-    },
-    {
-      "name": "rights-policy-brand-safety",
-      "description": "Verifies current YouTube policy, originality, copyright, licensing, AI disclosure, paid promotion, advertiser suitability, privacy, and reputational risk with authority to stop publication.",
-      "triggers": [
-        "Any video uses third-party assets, AI-generated realistic media, sponsor claims, sensitive topics, or personal data.",
-        "The channel is applying for or maintaining monetization.",
-        "A copyright claim, policy warning, demonetization, takedown, or dispute occurs.",
-        "A final publish-readiness review is required."
-      ],
-      "inputs": [
-        "Concept, package, research packet, script, final cut, asset manifest, and upload packet.",
-        "Licenses, receipts, permissions, consent, voice/likeness records, and source archives.",
-        "Target territories, audience age, sponsors, and monetization settings.",
-        "Current official YouTube and applicable legal guidance."
-      ],
-      "outputs": [
-        "Risk classification and clearance checklist.",
-        "Rights ledger audit and missing-proof list.",
-        "AI use/disclosure record.",
-        "Advertiser, sponsor, privacy, and reputation review.",
-        "Final PASS/BLOCK/ESCALATE decision and incident log."
-      ]
-    },
-    {
-      "name": "production-operations-manager",
-      "description": "Plans capacity, schedules stage-gated production, manages vendors and files, controls scope and revisions, and improves throughput without lowering creative or compliance standards.",
-      "triggers": [
-        "Multiple videos or agents are active.",
-        "Deadlines slip, revisions multiply, or assets become disorganized.",
-        "The team is hiring freelancers or outsourcing production.",
-        "Production cost or cycle time needs improvement."
-      ],
-      "inputs": [
-        "Orchestrator priority list and project states.",
-        "Role capacity, availability, rates, and competencies.",
-        "Production estimates, dependencies, and vendor agreements.",
-        "File, review, security, and rights requirements.",
-        "Historical cycle-time and revision data."
-      ],
-      "outputs": [
-        "Production board and state schedule.",
-        "RACI/owner map and capacity plan.",
-        "Project briefs, vendor briefs, and review SLAs.",
-        "Version/file/backup standard.",
-        "Cycle-time, revision, cost, and bottleneck report."
-      ]
-    },
-    {
-      "name": "finance-unit-economics",
-      "description": "Builds budgets, forecasts, video and format P&Ls, cash-flow scenarios, hiring thresholds, contribution metrics, and investment decisions for a YouTube media business.",
-      "triggers": [
-        "Creating a channel business plan or production budget.",
-        "Greenlighting expensive concepts or hiring.",
-        "Evaluating sponsors, products, affiliates, or tools.",
-        "Revenue is growing but cash or profit is unclear."
-      ],
-      "inputs": [
-        "Channel strategy, format slate, production estimates, and capacity.",
-        "Actual views, impressions, watch time, revenue by stream, and payment timing.",
-        "Vendor, labor, software, licensing, travel, product, and overhead costs.",
-        "Tax, currency, refund, commission, and working-capital assumptions.",
-        "Risk ranges and scenario inputs."
-      ],
-      "outputs": [
-        "Channel budget and cash-flow forecast.",
-        "Per-video and per-format P&L.",
-        "Revenue dashboard based on `shared/templates/revenue_dashboard.csv`.",
-        "Hiring, tool, and outsourcing business cases.",
-        "Greenlight cost range and postmortem variance report."
-      ]
-    }
-  ]
+    "suite_name":  "youtube-agent-skills",
+    "version":  "1.1.0",
+    "checked_policy_date":  "2026-06-23",
+    "north_star":  "qualified watch time per impression, constrained by satisfaction, originality, profitability, and policy",
+    "skills":  [
+                   {
+                       "name":  "youtube-business-orchestrator",
+                       "description":  "Orchestrates a faceless YouTube business from channel thesis through postmortem, routing work across specialist agents and enforcing CTR, AVD, originality, profitability, and policy gates.",
+                       "triggers":  [
+                                        "Starting or restructuring a channel.",
+                                        "Selecting which concepts enter production.",
+                                        "Coordinating several specialist agents.",
+                                        "Resolving disagreements about audience, package, scope, risk, or revenue.",
+                                        "Running weekly greenlight, production, and postmortem reviews."
+                                    ],
+                       "inputs":  [
+                                      "Locked channel thesis or an explicit request to create one.",
+                                      "Idea backlog and active-project state table.",
+                                      "Production capacity, cash constraints, and release obligations.",
+                                      "Latest channel analytics, experiment log, and revenue dashboard.",
+                                      "Open policy, rights, sponsor, or reputational risks."
+                                  ],
+                       "outputs":  [
+                                       "Weekly portfolio priority list.",
+                                       "Project state board with owner, hypothesis, risk, next artifact, and gate status.",
+                                       "Greenlight and return-with-revisions decision log.",
+                                       "Capacity allocation and escalation record.",
+                                       "Monthly operating review covering creative, audience, revenue, cost, and policy."
+                                   ]
+                   },
+                   {
+                       "name":  "channel-strategy-architect",
+                       "description":  "Defines the channel audience, repeatable promise, content pillars, format portfolio, faceless identity, competitive moat, and monetization thesis.",
+                       "triggers":  [
+                                        "Launching a new channel or major channel pivot.",
+                                        "The audience is unclear or returning viewers are weak.",
+                                        "Video ideas perform individually but do not form a coherent library.",
+                                        "A new niche, language, market, or revenue model is being considered."
+                                    ],
+                       "inputs":  [
+                                      "Founder capabilities, interests, credibility, constraints, and anti-goals.",
+                                      "Audience evidence and competitive analysis.",
+                                      "Production budget, available tools, and desired publishing capacity.",
+                                      "Revenue goals and acceptable time horizon.",
+                                      "Policy and rights boundaries."
+                                  ],
+                       "outputs":  [
+                                       "Completed `shared/templates/channel_thesis.md`.",
+                                       "Content-pillar matrix and format portfolio.",
+                                       "Browse/search acquisition map.",
+                                       "Faceless brand and editorial standards.",
+                                       "Monetization ladder and first ten-video test."
+                                   ]
+                   },
+                   {
+                       "name":  "audience-market-researcher",
+                       "description":  "Builds evidence-backed audience profiles, viewing jobs, language maps, content gaps, and commercial-intent insights for YouTube strategy and ideation.",
+                       "triggers":  [
+                                        "Creating or revising the channel thesis.",
+                                        "Developing a new content pillar, series, offer, or sponsor category.",
+                                        "Investigating weak audience fit, comments, or returning-viewer performance.",
+                                        "Searching for durable idea territories rather than one-off trends."
+                                    ],
+                       "inputs":  [
+                                      "Research question and decision it will inform.",
+                                      "Candidate audience, niche, geography, and language.",
+                                      "Existing channel analytics, comments, surveys, emails, or community data.",
+                                      "Competitor and adjacent-channel list.",
+                                      "Privacy, legal, and data-access constraints."
+                                  ],
+                       "outputs":  [
+                                       "Completed `shared/templates/audience_profile.md`.",
+                                       "Evidence table with source, confidence, and implication.",
+                                       "Audience language and objection bank.",
+                                       "Content-gap map and opportunity territories.",
+                                       "Commercial-intent and sponsor/product-fit notes."
+                                   ]
+                   },
+                   {
+                       "name":  "trend-competitive-intelligence",
+                       "description":  "Finds current YouTube outliers, format shifts, cross-niche opportunities, competitive gaps, and trend half-lives without encouraging imitation or rights violations.",
+                       "triggers":  [
+                                        "Building the idea backlog or quarterly strategy.",
+                                        "A format is declining or competitors are copying it.",
+                                        "The channel needs adjacent growth opportunities.",
+                                        "A breaking trend may create a time-sensitive video."
+                                    ],
+                       "inputs":  [
+                                      "Channel thesis and content pillars.",
+                                      "Peer, aspirational, substitute, and cross-niche channel sets.",
+                                      "Time window and target region/language.",
+                                      "Available analytics tools and public data.",
+                                      "Production and policy constraints."
+                                  ],
+                       "outputs":  [
+                                       "Weekly or monthly competitive scan.",
+                                       "Outlier database with normalized context.",
+                                       "Format-transfer library.",
+                                       "Trend opportunity briefs and saturation map.",
+                                       "Competitor package and positioning gaps."
+                                   ]
+                   },
+                   {
+                       "name":  "idea-format-developer",
+                       "description":  "Generates, scores, pressure-tests, and greenlights high-potential video concepts and repeatable formats for faceless entertainment-education channels.",
+                       "triggers":  [
+                                        "Creating a backlog or selecting the next upload.",
+                                        "Developing a repeatable series or adapting an outlier format.",
+                                        "A channel has strong production but inconsistent views.",
+                                        "A script or package feels forced because the underlying idea is weak."
+                                    ],
+                       "inputs":  [
+                                      "Locked channel thesis.",
+                                      "Audience evidence and current competitive/trend intelligence.",
+                                      "Previous postmortems and format performance.",
+                                      "Production capacity, budget, rights, and revenue constraints.",
+                                      "Any unique access, data, expertise, or assets."
+                                  ],
+                       "outputs":  [
+                                       "Scored idea backlog.",
+                                       "Completed concept brief for each greenlight candidate.",
+                                       "Format definition with repeatability and variation rules.",
+                                       "Title/thumbnail seeds and retention runway.",
+                                       "Risk, proof, cost, and monetization notes."
+                                   ]
+                   },
+                   {
+                       "name":  "packaging-director",
+                       "description":  "Integrates titles and thumbnails into distinct packaging hypotheses that win qualified clicks and create explicit obligations for the opening and payoff.",
+                       "triggers":  [
+                                        "A concept is greenlit.",
+                                        "CTR or impressions underperform while viewing quality is strong.",
+                                        "An evergreen video may benefit from repackaging.",
+                                        "A native YouTube A/B test is planned."
+                                    ],
+                       "inputs":  [
+                                      "Concept brief, target viewer, target surface, and channel thesis.",
+                                      "Proof, access, and final payoff available in the video.",
+                                      "Competitive package audit and current channel baselines.",
+                                      "Thumbnail assets or capture plan.",
+                                      "Previous A/B and postmortem learnings."
+                                  ],
+                       "outputs":  [
+                                       "Completed `shared/templates/packaging_brief.md`.",
+                                       "Three title-thumbnail hypotheses with proof mapping.",
+                                       "Primary route and fallback route.",
+                                       "Thumbnail capture/design brief and title bank assignments.",
+                                       "Opening obligations and A/B test plan."
+                                   ]
+                   },
+                   {
+                       "name":  "thumbnail-art-director",
+                       "description":  "Designs and briefs mobile-first thumbnails with one dominant idea, strong visual proof, clean hierarchy, originality, and testable alternatives for faceless channels.",
+                       "triggers":  [
+                                        "A packaging brief requires thumbnail concepts or asset capture.",
+                                        "An existing thumbnail needs a new hypothesis.",
+                                        "A channel needs a recognizable but flexible visual system.",
+                                        "Thumbnail production is becoming slow, cluttered, or derivative."
+                                    ],
+                       "inputs":  [
+                                      "Locked packaging brief and inferred viewer promise.",
+                                      "Available or creatable visual proof.",
+                                      "Channel visual system and competitor audit.",
+                                      "Rights-cleared source assets or capture plan.",
+                                      "Mobile display constraints and test plan."
+                                  ],
+                       "outputs":  [
+                                       "Thumbnail creative brief and visual sentence.",
+                                       "Rough composition board and selected variants.",
+                                       "Asset capture/generation list with rights basis.",
+                                       "Production files, exports, and accessibility description.",
+                                       "Thumbnail-specific A/B hypothesis notes."
+                                   ]
+                   },
+                   {
+                       "name":  "title-copywriter",
+                       "description":  "Writes concise, accurate, high-curiosity YouTube titles for browse and search, paired deliberately with thumbnail information and audience intent.",
+                       "triggers":  [
+                                        "A packaging director needs title routes.",
+                                        "A search-led or browse-led video is being prepared.",
+                                        "An evergreen video needs repackaging.",
+                                        "Titles are verbose, generic, repetitive, or disconnected from the actual payoff."
+                                    ],
+                       "inputs":  [
+                                      "Concept and packaging briefs.",
+                                      "Target viewer and traffic surface.",
+                                      "Thumbnail concepts and information they already communicate.",
+                                      "Audience language bank, search intent, and competitor audit.",
+                                      "Exact result, stakes, and proof available in the video."
+                                  ],
+                       "outputs":  [
+                                       "Title bank grouped by hypothesis and surface.",
+                                       "Three finalists paired with thumbnails.",
+                                       "Accuracy and truncation check.",
+                                       "Opening obligations created by each title.",
+                                       "Change log for post-publish tests."
+                                   ]
+                   },
+                   {
+                       "name":  "research-fact-checker",
+                       "description":  "Builds source-backed research packets, claim ledgers, counterevidence, uncertainty labels, visual proof plans, and final factual signoff for YouTube videos.",
+                       "triggers":  [
+                                        "A concept contains factual, historical, scientific, financial, legal, medical, political, reputational, or current claims.",
+                                        "The script uses third-party footage, data, screenshots, quotes, or documents.",
+                                        "A sponsor claim or product comparison requires substantiation.",
+                                        "A video is being updated or corrected."
+                                    ],
+                       "inputs":  [
+                                      "Concept and packaging briefs.",
+                                      "Research questions and intended conclusion.",
+                                      "Target audience sophistication and runtime.",
+                                      "Risk category, geography, and publication date.",
+                                      "Available source subscriptions, archives, interviews, and datasets."
+                                  ],
+                       "outputs":  [
+                                       "Completed `shared/templates/research_packet.md`.",
+                                       "Claim ledger and source archive.",
+                                       "Counterevidence and uncertainty memo.",
+                                       "Visual proof and rights notes.",
+                                       "Script and final-cut factual signoff or blocking corrections."
+                                   ]
+                   },
+                   {
+                       "name":  "story-retention-scriptwriter",
+                       "description":  "Writes package-first, evidence-backed YouTube scripts with strong first-30-second confirmation, causal progression, curiosity loops, proof, emotional variation, and proportionate payoff.",
+                       "triggers":  [
+                                        "Packaging and research are ready for scripting.",
+                                        "Intro retention or mid-video AVD is weak.",
+                                        "An essay, article, or research packet must become video-native.",
+                                        "A faceless format needs recurring story architecture."
+                                    ],
+                       "inputs":  [
+                                      "Locked packaging brief and opening obligations.",
+                                      "Research packet and visual proof opportunities.",
+                                      "Target viewer, surface, runtime, and brand voice.",
+                                      "Sponsor/CTA requirements and policy constraints.",
+                                      "Retention postmortems from comparable videos."
+                                  ],
+                       "outputs":  [
+                                       "Locked script using `shared/templates/script.md`.",
+                                       "Retention map with beat timing and loop closures.",
+                                       "Visual and proof annotations.",
+                                       "Opening and payoff acceptance checklist.",
+                                       "Optional-cut map and sponsor integration location."
+                                   ]
+                   },
+                   {
+                       "name":  "faceless-visual-producer",
+                       "description":  "Plans and produces original, rights-cleared visuals, diagrams, screen captures, motion systems, archival transformations, and proof assets for faceless YouTube videos.",
+                       "triggers":  [
+                                        "A locked script needs a storyboard or asset plan.",
+                                        "A channel is overly dependent on generic stock clips.",
+                                        "Custom graphics, maps, data, screens, demonstrations, or archival material are required.",
+                                        "The visual system must become faster without becoming templated."
+                                    ],
+                       "inputs":  [
+                                      "Script, retention map, and visual proof list.",
+                                      "Channel visual grammar and brand standards.",
+                                      "Asset budget, tools, team capability, and deadline.",
+                                      "Rights and disclosure requirements.",
+                                      "Thumbnail capture requests."
+                                  ],
+                       "outputs":  [
+                                       "Storyboard/animatic and scene plan.",
+                                       "Completed `shared/templates/asset_manifest.csv`.",
+                                       "Original and licensed asset package with editable sources.",
+                                       "Visual-system components and reuse notes.",
+                                       "Thumbnail capture assets and disclosure notes."
+                                   ]
+                   },
+                   {
+                       "name":  "voice-sound-producer",
+                       "description":  "Produces clear, distinctive narration, music, sound design, pronunciation, pacing, and final audio mixes for faceless YouTube videos while respecting voice rights and disclosure rules.",
+                       "triggers":  [
+                                        "A script is locked for narration.",
+                                        "The channel uses human or synthetic voiceover.",
+                                        "Retention suffers from monotone delivery, poor intelligibility, or exhausting sound design.",
+                                        "Music or voice licensing and disclosure must be managed."
+                                    ],
+                       "inputs":  [
+                                      "Locked script with emotional and pronunciation notes.",
+                                      "Brand voice profile and target viewer.",
+                                      "Reference mix, music/SFX licenses, and platform delivery specifications.",
+                                      "AI disclosure and voice-consent requirements.",
+                                      "Picture timing or animatic where available."
+                                  ],
+                       "outputs":  [
+                                       "Voice brief and annotated script.",
+                                       "Final narration takes and alternates.",
+                                       "Music/SFX cue sheet with licenses.",
+                                       "Dialogue, music, effects stems and final mix.",
+                                       "Pronunciation, voice-rights, and AI-use log."
+                                   ]
+                   },
+                   {
+                       "name":  "retention-video-editor",
+                       "description":  "Edits faceless YouTube videos for promise match, clarity, causal story, proof, emotional pacing, and qualified AVD rather than indiscriminate speed or visual noise.",
+                       "triggers":  [
+                                        "Assets and narration are ready for rough cut.",
+                                        "A rough cut feels slow, confusing, repetitive, or overstimulating.",
+                                        "Past videos show intro drops, mid-video dips, or sponsor-related abandonment.",
+                                        "A final retention and publish-readiness review is required."
+                                    ],
+                       "inputs":  [
+                                      "Locked package, script, retention map, storyboard, assets, narration, and sponsor requirements.",
+                                      "Research packet and rights manifest.",
+                                      "Target runtime and previous retention postmortems.",
+                                      "Brand editing grammar and delivery specifications."
+                                  ],
+                       "outputs":  [
+                                       "Story rough cut and review notes.",
+                                       "Completed `shared/templates/edit_review.md`.",
+                                       "Final master, clean master, captions, stems, and project archive.",
+                                       "Predicted retention risks and optional recut plan.",
+                                       "Final asset usage report."
+                                   ]
+                   },
+                   {
+                       "name":  "publishing-seo-distribution",
+                       "description":  "Builds complete upload packets, metadata, chapters, captions, playlists, end screens, native A/B tests, and coordinated distribution for long-form YouTube videos.",
+                       "triggers":  [
+                                        "A final cut and package are approved.",
+                                        "A search-led evergreen video needs intent alignment.",
+                                        "A video requires chapters, playlists, end screens, disclosures, or external launch assets.",
+                                        "An older library needs metadata or packaging maintenance."
+                                    ],
+                       "inputs":  [
+                                      "Final master and approved title/thumbnail variants.",
+                                      "Upload packet template, captions, chapters, source/credit requirements, and disclosures.",
+                                      "Target surface, search intent, playlist/series map, and next-video destination.",
+                                      "Monetization and sponsor settings.",
+                                      "Launch timing and distribution channels."
+                                  ],
+                       "outputs":  [
+                                       "Completed `shared/templates/upload_packet.md`.",
+                                       "Published video record and variant configuration.",
+                                       "Description, chapters, captions, playlist, cards, end screen, pinned comment, and distribution copy.",
+                                       "Launch QA checklist and issue log.",
+                                       "Metadata/change history."
+                                   ]
+                   },
+                   {
+                       "name":  "shorts-repurposing-strategist",
+                       "description":  "Creates original YouTube Shorts and long-form derivative assets with swipe-stopping first frames, compressed story, loops, standalone value, and deliberate bridges to the channel.",
+                       "triggers":  [
+                                        "A long-form project contains short, standalone moments.",
+                                        "The channel needs top-of-funnel experiments or faster idea testing.",
+                                        "A Shorts-native format or series is being developed.",
+                                        "Viewed-versus-swiped, completion, or repeat performance is weak."
+                                    ],
+                       "inputs":  [
+                                      "Long-form script/cut or Shorts-native concept.",
+                                      "Target viewer, first-frame visual, and central payoff.",
+                                      "Rights and music constraints.",
+                                      "Channel bridge objective and related long-form destination.",
+                                      "Past Shorts analytics."
+                                  ],
+                       "outputs":  [
+                                       "Shorts brief with first-frame and payoff.",
+                                       "Vertical script/cut list and visual reframe plan.",
+                                       "Rights/music check and caption file.",
+                                       "Related-video bridge plan.",
+                                       "Shorts postmortem and long-form transfer hypothesis."
+                                   ]
+                   },
+                   {
+                       "name":  "analytics-experimentation-scientist",
+                       "description":  "Designs YouTube experiments, interprets CTR and retention by context, diagnoses bottlenecks, separates causality from correlation, and converts every upload into a decision.",
+                       "triggers":  [
+                                        "Before publication, to define predictions and tests.",
+                                        "After publication, to review packaging, retention, audience fit, and revenue.",
+                                        "When performance is ambiguous or team narratives conflict.",
+                                        "When deciding whether to scale, revise, repackage, sequel, or stop a format."
+                                    ],
+                       "inputs":  [
+                                      "Pre-publish hypothesis, predicted band, package variants, and target surface.",
+                                      "YouTube Analytics data by video, source, audience, geography, and time.",
+                                      "Retention curves, A/B results, comments, distribution changes, and revenue/cost data.",
+                                      "Comparable channel baselines and similar-length videos.",
+                                      "Experiment/change log."
+                                  ],
+                       "outputs":  [
+                                       "Pre-registered experiment record in `experiment_log.csv`.",
+                                       "Contextual performance dashboard.",
+                                       "Completed `shared/templates/postmortem.md`.",
+                                       "Primary diagnosis with confidence and alternative explanations.",
+                                       "Next experiment, scale/revise/repackage/sequel/stop recommendation."
+                                   ]
+                   },
+                   {
+                       "name":  "monetization-revenue-architect",
+                       "description":  "Designs an audience-aligned revenue stack across ads, Premium, sponsors, affiliates, products, memberships, licensing, and commerce while protecting retention and trust.",
+                       "triggers":  [
+                                        "Creating the channel business model.",
+                                        "Approaching or entering YPP.",
+                                        "Adding sponsors, affiliates, products, memberships, or licensing.",
+                                        "RPM is weak, revenue is concentrated, or monetization harms retention."
+                                    ],
+                       "inputs":  [
+                                      "Channel thesis, audience intent, geography, and advertiser suitability.",
+                                      "Current eligibility, revenue analytics, and traffic mix.",
+                                      "Product/sponsor categories, affiliate programs, and owned capabilities.",
+                                      "Production cost and cash requirements.",
+                                      "Trust, legal, and disclosure constraints."
+                                  ],
+                       "outputs":  [
+                                       "Monetization ladder by channel stage.",
+                                       "Revenue architecture by pillar and viewer intent.",
+                                       "Placement and attribution rules.",
+                                       "Scenario model and concentration dashboard.",
+                                       "Quarterly monetization experiment roadmap."
+                                   ]
+                   },
+                   {
+                       "name":  "sponsorship-affiliate-sales",
+                       "description":  "Sources, qualifies, prices, negotiates, integrates, discloses, and measures sponsorships and affiliate offers that fit the audience and preserve editorial trust.",
+                       "triggers":  [
+                                        "The channel has a defined audience and repeatable viewership.",
+                                        "A sponsor, agency, affiliate program, or brand approaches.",
+                                        "A campaign needs pricing, negotiation, integration, tracking, or reporting.",
+                                        "Commercial segments show retention damage or weak conversion."
+                                    ],
+                       "inputs":  [
+                                      "Audience/channel media kit and recent performance distribution.",
+                                      "Target brand categories and audience problem map.",
+                                      "Video slate and integration opportunities.",
+                                      "Rate floor, inventory, exclusivity limits, usage-rights policy, and legal terms.",
+                                      "Disclosure and advertiser-suitability requirements."
+                                  ],
+                       "outputs":  [
+                                       "Prospect pipeline and outreach assets.",
+                                       "Completed `shared/templates/sponsor_brief.md`.",
+                                       "Deal memo and approval log.",
+                                       "Integration script, disclosure, and tracking plan.",
+                                       "Campaign report and renewal recommendation."
+                                   ]
+                   },
+                   {
+                       "name":  "community-audience-development",
+                       "description":  "Develops returning viewers and audience intelligence through comments, posts, series rituals, feedback loops, community programming, and next-video relationships.",
+                       "triggers":  [
+                                        "Returning viewers or next-video movement are weak.",
+                                        "The channel needs audience feedback, community posts, or recurring rituals.",
+                                        "A series, membership, live element, or newsletter is being considered.",
+                                        "Comments reveal confusion, demand, or trust issues."
+                                    ],
+                       "inputs":  [
+                                      "Channel thesis and brand voice.",
+                                      "Recent uploads, comments, audience analytics, community tools, and moderation policies.",
+                                      "Upcoming slate and next-video bridges.",
+                                      "Monetization/community plans.",
+                                      "Safety and privacy constraints."
+                                  ],
+                       "outputs":  [
+                                       "Community voice and moderation guide.",
+                                       "Weekly comment insight report.",
+                                       "Community-post and ritual calendar.",
+                                       "Next-video bridge plan.",
+                                       "Audience questions, language, and correction log."
+                                   ]
+                   },
+                   {
+                       "name":  "rights-policy-brand-safety",
+                       "description":  "Verifies current YouTube policy, originality, copyright, licensing, AI disclosure, paid promotion, advertiser suitability, privacy, and reputational risk with authority to stop publication.",
+                       "triggers":  [
+                                        "Any video uses third-party assets, AI-generated realistic media, sponsor claims, sensitive topics, or personal data.",
+                                        "The channel is applying for or maintaining monetization.",
+                                        "A copyright claim, policy warning, demonetization, takedown, or dispute occurs.",
+                                        "A final publish-readiness review is required."
+                                    ],
+                       "inputs":  [
+                                      "Concept, package, research packet, script, final cut, asset manifest, and upload packet.",
+                                      "Licenses, receipts, permissions, consent, voice/likeness records, and source archives.",
+                                      "Target territories, audience age, sponsors, and monetization settings.",
+                                      "Current official YouTube and applicable legal guidance."
+                                  ],
+                       "outputs":  [
+                                       "Risk classification and clearance checklist.",
+                                       "Rights ledger audit and missing-proof list.",
+                                       "AI use/disclosure record.",
+                                       "Advertiser, sponsor, privacy, and reputation review.",
+                                       "Final PASS/BLOCK/ESCALATE decision and incident log."
+                                   ]
+                   },
+                   {
+                       "name":  "production-operations-manager",
+                       "description":  "Plans capacity, schedules stage-gated production, manages vendors and files, controls scope and revisions, and improves throughput without lowering creative or compliance standards.",
+                       "triggers":  [
+                                        "Multiple videos or agents are active.",
+                                        "Deadlines slip, revisions multiply, or assets become disorganized.",
+                                        "The team is hiring freelancers or outsourcing production.",
+                                        "Production cost or cycle time needs improvement."
+                                    ],
+                       "inputs":  [
+                                      "Orchestrator priority list and project states.",
+                                      "Role capacity, availability, rates, and competencies.",
+                                      "Production estimates, dependencies, and vendor agreements.",
+                                      "File, review, security, and rights requirements.",
+                                      "Historical cycle-time and revision data."
+                                  ],
+                       "outputs":  [
+                                       "Production board and state schedule.",
+                                       "RACI/owner map and capacity plan.",
+                                       "Project briefs, vendor briefs, and review SLAs.",
+                                       "Version/file/backup standard.",
+                                       "Cycle-time, revision, cost, and bottleneck report."
+                                   ]
+                   },
+                   {
+                       "name":  "finance-unit-economics",
+                       "description":  "Builds budgets, forecasts, video and format P\u0026Ls, cash-flow scenarios, hiring thresholds, contribution metrics, and investment decisions for a YouTube media business.",
+                       "triggers":  [
+                                        "Creating a channel business plan or production budget.",
+                                        "Greenlighting expensive concepts or hiring.",
+                                        "Evaluating sponsors, products, affiliates, or tools.",
+                                        "Revenue is growing but cash or profit is unclear."
+                                    ],
+                       "inputs":  [
+                                      "Channel strategy, format slate, production estimates, and capacity.",
+                                      "Actual views, impressions, watch time, revenue by stream, and payment timing.",
+                                      "Vendor, labor, software, licensing, travel, product, and overhead costs.",
+                                      "Tax, currency, refund, commission, and working-capital assumptions.",
+                                      "Risk ranges and scenario inputs."
+                                  ],
+                       "outputs":  [
+                                       "Channel budget and cash-flow forecast.",
+                                       "Per-video and per-format P\u0026L.",
+                                       "Revenue dashboard based on `shared/templates/revenue_dashboard.csv`.",
+                                       "Hiring, tool, and outsourcing business cases.",
+                                       "Greenlight cost range and postmortem variance report."
+                                   ]
+                   },
+                   {
+                       "name":  "ai-pattern-mining-analyst",
+                       "description":  "Uses AI-assisted analysis to extract YouTube title, thumbnail, hook, comment, and format patterns from examples while preventing cloning, generic averaging, and unsupported factual claims.",
+                       "triggers":  [
+                                        "Competitive examples need to become a pattern library.",
+                                        "Titles, thumbnails, hooks, comments, or first-30-second examples need structured analysis.",
+                                        "An agent needs original variants after outlier research.",
+                                        "Clone-risk review is required before using generated packages, hooks, or concepts."
+                                    ],
+                       "inputs":  [
+                                      "Example titles, thumbnail descriptions, hooks, scripts excerpts, comments, or channel observations.",
+                                      "Analysis goal: title, thumbnail, hook, full format, comment gap, or script tone.",
+                                      "Channel thesis, target viewer, and brand voice card when available.",
+                                      "Rights, policy, originality, and factual-risk constraints."
+                                  ],
+                       "outputs":  [
+                                       "Pattern report with viewer behavior, emotional packaging, and evidence notes.",
+                                       "Original variants grouped by hypothesis.",
+                                       "Clone-risk flags and rewrites.",
+                                       "Research, policy, packaging, or ideation handoff notes."
+                                   ]
+                   },
+                   {
+                       "name":  "sleep-channel-architect",
+                       "description":  "Designs scalable sleep, bedtime-story, calm-history, ambient documentary, and background-listening YouTube channels with original scripts, varied subjects, low-arousal packaging, and monetization-safe production rules.",
+                       "triggers":  [
+                                        "Launching or repositioning a sleep, calm-history, bedtime-story, ambient documentary, or meditation-adjacent channel.",
+                                        "A channel needs long-session viewing without repetitive-template risk.",
+                                        "Sleep videos are too generic, too stimulating, or too similar across uploads.",
+                                        "A validation slate is needed for a sleep channel."
+                                    ],
+                       "inputs":  [
+                                      "Channel goal, sleep subniche, target audience, and risk tolerance.",
+                                      "Production budget, voice type, visual budget, and upload cadence.",
+                                      "Competitive or outlier research where available.",
+                                      "Policy, rights, AI disclosure, and monetization constraints."
+                                  ],
+                       "outputs":  [
+                                       "Sleep channel blueprint.",
+                                       "30-video validation map with variation rules.",
+                                       "Brand, voice, ambience, visual, and metadata standards.",
+                                       "Policy-safety and originality rules.",
+                                       "Monetization path and risk review cadence."
+                                   ]
+                   },
+                   {
+                       "name":  "sleep-scriptwriter",
+                       "description":  "Writes long-form low-arousal sleep, bedtime-story, calm-history, ambient documentary, and background-listening scripts with soft hooks, chapter loops, source-aware narration, visual/audio notes, and anti-repetition safeguards.",
+                       "triggers":  [
+                                        "Writing or rewriting a sleep, calm-history, bedtime-story, ambient documentary, or background-listening script.",
+                                        "A normal documentary script needs a low-arousal sleep version.",
+                                        "Hooks, CTAs, visuals, or audio notes need to be softened for sleep continuity.",
+                                        "A sleep script needs chapter structure, source notes, and policy-safe originality review before production."
+                                    ],
+                       "inputs":  [
+                                      "Sleep channel blueprint or explicit sleep-state promise.",
+                                      "Locked title/package, topic, audience, target length, and chapter length range.",
+                                      "Voice card, research packet, source boundaries, and do-not-claim list.",
+                                      "Ambience, visual style, CTA constraints, and policy notes."
+                                  ],
+                       "outputs":  [
+                                       "Sleep script package.",
+                                       "Chapter map with gentle questions, sensory anchors, soft payoffs, and transition lines.",
+                                       "Full narration with voice, visual, ambience, source, and policy annotations.",
+                                       "Soft CTA and optional-cut notes.",
+                                       "Sleep rewrite notes and unresolved research questions."
+                                   ]
+                   }
+               ]
 }

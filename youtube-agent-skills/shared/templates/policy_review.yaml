@@ -1,0 +1,40 @@
+policy_review:
+  video_title:
+  reviewer:
+  review_date:
+  overall_risk: low | medium | high
+  decision: approve | revise | reject
+  script_originality:
+    score_1_10:
+    notes:
+    required_fixes: []
+  repetitive_template_risk:
+    score_1_10:
+    similar_to_previous_uploads:
+      - upload:
+        similarity:
+        fix:
+  reused_content_risk:
+    score_1_10:
+    third_party_assets:
+      - asset:
+        license:
+        transformation_or_commentary:
+        risk:
+  ai_genericity_risk:
+    score_1_10:
+    generic_sections:
+      - section:
+        fix:
+  metadata_accuracy:
+    score_1_10:
+    title_claims_supported: true | false
+    thumbnail_claims_supported: true | false
+  asset_rights:
+    music:
+    ambience:
+    visuals:
+    voice:
+  final_required_fixes:
+    - fix:
+  final_notes:

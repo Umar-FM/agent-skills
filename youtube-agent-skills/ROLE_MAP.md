@@ -15,6 +15,8 @@
 | `channel-strategy-architect` | Audience promise, pillars, format portfolio, brand and business thesis |
 | `audience-market-researcher` | Evidence-backed jobs, language, gaps, intent, objections |
 | `trend-competitive-intelligence` | Current outliers, format shifts, saturation and cross-niche transfer |
+| `ai-pattern-mining-analyst` | AI-assisted pattern extraction, comment-gap clustering, original variants and clone-risk review |
+| `sleep-channel-architect` | Sleep-channel promise, low-arousal format system, variation rules and validation slate |
 | `idea-format-developer` | Concept generation, scorecards, proof, retention runway, greenlight candidates |
 
 ## Packaging
@@ -31,6 +33,7 @@
 |---|---|
 | `research-fact-checker` | Claim ledger, primary sources, uncertainty, counterevidence and factual signoff |
 | `story-retention-scriptwriter` | First 30 seconds, causal story, loops, proof, payoff and retention map |
+| `sleep-scriptwriter` | Low-arousal sleep scripts, soft hooks, chapter loops, ambience/visual notes and source-aware narration |
 | `faceless-visual-producer` | Storyboards, original explanatory visuals, asset manifest and visual grammar |
 | `voice-sound-producer` | Narration, voice rights, music, sound design, mix and pronunciation |
 | `retention-video-editor` | Story cut, proof, clarity, emotional pacing, final viewing experience |
@@ -67,5 +70,7 @@ A solo operator or small agent team can begin with:
 9. `publishing-seo-distribution`
 10. `analytics-experimentation-scientist`
 11. `rights-policy-brand-safety`
+
+For sleep or background-listening channels, add `sleep-channel-architect` before the channel thesis is locked and route scripts to `sleep-scriptwriter`. When adapting competitor examples or outliers, add `ai-pattern-mining-analyst` before packaging or scripting.
 
 The remaining roles can be activated as dedicated agents when volume, risk, or revenue complexity justifies specialization.

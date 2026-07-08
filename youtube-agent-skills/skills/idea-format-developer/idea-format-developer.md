@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Pattern mining playbook](../../shared/PATTERN_MINING_PLAYBOOK.md)
 
 ## Use this skill when
 
@@ -38,17 +39,18 @@ Read these shared references before acting:
 - Packaging seeds are part of concept quality, not a later marketing task.
 - The payoff must be concrete and provable.
 - Reusable formats must create materially different substance across episodes.
+- Choose an emotional or narrative engine before expanding a repeatable format.
 
 # Workflow
 
 1. Mine idea territories from audience questions, contradictions, desires, fears, comparisons, transformations, underexplained mechanisms, and visible outcomes.
-2. Generate at least 10 variations per promising territory using constraints, scale changes, versus structures, timelines, reversals, experiments, ranks, and cross-niche format transfer.
+2. Generate at least 10 variations per promising territory using constraints, scale changes, versus structures, timelines, reversals, experiments, ranks, content engines, story formats, and cross-niche format transfer.
 3. Write a one-sentence premise using concrete nouns and verbs. Remove context that the viewer does not need to understand the appeal.
 4. Define the familiar element and unexpected twist. If both are unfamiliar, comprehension may fail; if both are familiar, curiosity may fail.
 5. Specify the central question or goal, stakes, final payoff, and proof path.
 6. Sketch title and thumbnail routes. If no honest package is compelling, reject or reframe the concept before scripting.
 7. Map retention runway: at least three meaningful escalations, discoveries, tests, decisions, or emotional changes for a mid-length video.
-8. Choose the most efficient format that can prove the premise. High production value is justified only when viewers can perceive the additional value.
+8. Choose the most efficient format that can prove the premise. Define the repeatability rules and variation rules before greenlight.
 9. Assess originality, rights, safety, advertiser fit, monetization, sequel potential, and production cost.
 10. Score the concept with `shared/templates/concept_brief.md`; present PASS, RETURN, or REJECT with the main uncertainty and cheapest validating test.
 

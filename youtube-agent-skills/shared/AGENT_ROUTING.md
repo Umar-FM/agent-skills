@@ -8,11 +8,13 @@ The orchestrator should classify every request by the **artifact that must chang
 |---|---|---|
 | “What channel should we make?” | `channel-strategy-architect` | audience, trend, finance, monetization |
 | “Find video ideas” | `idea-format-developer` | audience and trend intelligence |
+| “Analyze these competitor examples/patterns” | `ai-pattern-mining-analyst` | trend, packaging, title, thumbnail |
+| “Build a sleep channel” | `sleep-channel-architect` | strategy, policy, monetization |
 | “This topic should work, but how do we frame it?” | `packaging-director` | idea developer |
 | “Make a thumbnail” | `thumbnail-art-director` | packaging director |
 | “Write titles” | `title-copywriter` | packaging director |
 | “Research this topic” | `research-fact-checker` | rights/policy for high-risk claims |
-| “Write the script” | `story-retention-scriptwriter` | research and packaging must already be locked |
+| “Write the script” | `story-retention-scriptwriter`; use `sleep-scriptwriter` for sleep/background-listening scripts | research and packaging must already be locked |
 | “Plan visuals” | `faceless-visual-producer` | research and editor |
 | “Narrate/mix it” | `voice-sound-producer` | script and editor |
 | “Edit for retention” | `retention-video-editor` | script and packaging |
@@ -42,6 +44,8 @@ The orchestrator should classify every request by the **artifact that must chang
 ### Safe parallel work
 
 - Audience research and trend intelligence.
+- AI pattern mining after examples are collected and before package/script generation.
+- Sleep-channel visual, voice, and metadata standards after the sleep blueprint is approved.
 - Thumbnail asset exploration and title generation after the packaging hypotheses exist.
 - Visual research and voice preparation after script structure stabilizes.
 - Monetization planning and finance modeling after audience intent is clear.

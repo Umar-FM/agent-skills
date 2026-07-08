@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Sleep channel playbook](../../shared/SLEEP_CHANNEL_PLAYBOOK.md) when producing sleep or low-arousal background-listening videos.
 
 ## Use this skill when
 
@@ -22,6 +23,7 @@ Read these shared references before acting:
 - The channel uses human or synthetic voiceover.
 - Retention suffers from monotone delivery, poor intelligibility, or exhausting sound design.
 - Music or voice licensing and disclosure must be managed.
+- A sleep video needs stable low-arousal narration, ambience, and mix rules.
 
 ## Required inputs
 
@@ -38,6 +40,7 @@ Read these shared references before acting:
 - Synthetic voice requires licensed commercial use and human editorial control.
 - Music and SFX support story turns; they do not compensate for weak writing.
 - Speech intelligibility outranks loudness and spectacle.
+- Sleep mixes must avoid sudden effects, loud CTAs, music swells, and abrupt volume changes.
 
 # Workflow
 

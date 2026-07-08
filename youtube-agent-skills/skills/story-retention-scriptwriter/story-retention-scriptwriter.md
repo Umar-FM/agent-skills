@@ -15,6 +15,7 @@ Read these shared references before acting:
 - [Handoff contracts](../../shared/HANDOFF_CONTRACTS.md)
 - [Metrics and diagnosis](../../shared/METRICS_AND_DIAGNOSIS.md)
 - [Policy and rights](../../shared/POLICY_AND_RIGHTS.md)
+- [Pattern mining playbook](../../shared/PATTERN_MINING_PLAYBOOK.md)
 
 ## Use this skill when
 
@@ -22,6 +23,7 @@ Read these shared references before acting:
 - Intro retention or mid-video AVD is weak.
 - An essay, article, or research packet must become video-native.
 - A faceless format needs recurring story architecture.
+- The request is not primarily a sleep, bedtime-story, or low-arousal background-listening script; route those to `sleep-scriptwriter`.
 
 ## Required inputs
 
@@ -38,6 +40,7 @@ Read these shared references before acting:
 - Use causal “but/therefore” progression instead of chronological “and then.”
 - Open loops only when the eventual closure provides proportionate value.
 - Every segment must change knowledge, progress, stakes, emotion, or perspective.
+- Train the voice and constraints before drafting long-form scripts; do not rely on one all-purpose prompt.
 
 # Workflow
 
@@ -46,7 +49,7 @@ Read these shared references before acting:
 3. Draft 5-15 seconds to establish consequence, stakes, conflict, or the central unanswered question.
 4. Draft 15-30 seconds to show the mechanism/roadmap and deliver the first useful proof or micro-payoff.
 5. Build a beat map in `shared/templates/retention_map.md`. For each beat, state the viewer question, new value, visual proof, emotion, and loop status.
-6. Order beats by causal necessity and escalating interest. Move later top moments earlier unless suspense genuinely requires delay.
+6. Choose a story format such as origin, rise/fall, chain reaction, hidden truth, real reason, unseen system, or buried detail. Order beats by causal necessity and escalating interest.
 7. Create progress devices: tests, thresholds, countdowns, chapters, maps, scoreboards, discoveries, decisions, or transformations.
 8. Alternate cognitive and emotional modes: explanation, example, surprise, consequence, humor, tension, relief, reflection.
 9. Use signposting and segmentation to reduce cognitive load. Remove seductive detail that does not advance understanding or story.

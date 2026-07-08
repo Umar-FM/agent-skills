@@ -37,6 +37,8 @@ Use sources in tiers. Creator advice is valuable, but it is not platform law; co
 - [Veritasium](https://www.youtube.com/@veritasium) - misconception, curiosity, experiments, and counterintuitive science packaging.
 - [Hayden Hillier-Smith](https://www.youtube.com/@HillierSmith) - story-first editing and emotional pacing.
 - [Jenny Hoyos](https://www.youtube.com/@JennyHoyos) - short-form hooks, compression, loops, and viewer psychology.
+- Saim / `@saimagnate` public thread corpus and mirrors - outlier mining, viewer behavior loops, emotional packaging, content engines, AI-assisted prompt chains, sleep-story observations. Treat as creator hypotheses, not platform law.
+- Wanner CashCow public material and thread mirrors - sleep-channel automation levels, safety suggestions, and self-reported economics. Treat earnings and RPM claims as directional only.
 
 ## Tier 3: Research
 
